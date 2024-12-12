@@ -56,6 +56,19 @@ nav a:hover {
 .n-b{
     display: none;
 }
+.n-b>.gdn{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.n-b>.gdn:hover{
+    background-color: #333;
+}
 .sign-in {
     padding: 8px 16px;
     background-color: #000;
@@ -413,12 +426,18 @@ nav a:hover {
     
 }
 @media (max-width: 600px) {
+    
     .menu-toggle {
         display: block;
         font-size: 20px;
         cursor: pointer;
         color: #000;
     }
+    .logo span{
+      position: relative;
+      right: -10rem;
+    }
+    
 
 nav{
     position: absolute;
@@ -435,6 +454,9 @@ nav>a:hover{
  background-color: #f0f0f0;
 }
 
+nav .n-b{
+    display: block;
+}
     .footer-layout {
         flex-direction: column;
         align-items: center;
@@ -447,5 +469,10 @@ nav>a:hover{
 
     .email-subscription input {
         margin-bottom: 10px;
+    }
+}
+@media  screen and (max-width:467px) {
+    .logo span{
+        left: 0;
     }
 }
